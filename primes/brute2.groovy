@@ -10,7 +10,7 @@ class BruteForce {
         def app = new BruteForce()
             try {
                 int n = (args) ? args[0].toInteger() : 100
-                println("isPrime list:\n${app.find(n)}")
+                println("Prime list:\n${app.find(n)}")
             } catch (NumberFormatException e) {
                 println """
 usage: groovy brute2.groovy <number>
