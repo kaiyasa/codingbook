@@ -10,7 +10,7 @@ class SieveOfEratosthenes {
     static void main(String[] args) {
         int n = 100
         try {
-            args ? args[0].toInteger() : 100
+            n = args ? args[0].toInteger() : 100
         } catch (NumberFormatException e) {
 println """
 usage: groovy sieve1.groovy <number>
