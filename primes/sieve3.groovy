@@ -28,20 +28,21 @@ usage: groovy sieve1.groovy <number>
         if (n == 2)
             return [2]
 
-        boolean[] sieve = new boolean[indexFor(n) + 1]
-        (0 ..< sieve.size()).each { i -> sieve[i] = true }
+        int size = indexFor(n) + 1
+        boolean[] sieve = new boolean[size]
+        (0 ..< size).each { i -> sieve[i] = true }
 
-        // mark all multiples of primes to false
-        int head = 0, v
-        while ((v = valueFor(head))**2 <= n) {
-            if (sieve[head]) {
-                ((head+v) ..< sieve.size()).step(v)
+        int h = 0, v = 3
+        while (v**2 <= n) {
+            if (sieve[h])
+                // mark 3rd, 5th, etc. multiples of prime to false
+                ((h + v) ..< size).step(v)
                     .each { sieve[it] = false }
-            }
-            ++head
+            h += 1
+            v += 2
         }
 
-        return (0 ..< sieve.size()).inject([2]) { primes, i ->
+        return (0 ..< size).inject([2]) { primes, i ->
             v = valueFor(i)
             (sieve[i] && v <= n) ? primes << v : primes
         }
