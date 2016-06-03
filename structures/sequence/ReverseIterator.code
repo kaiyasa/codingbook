@@ -1,0 +1,9 @@
+
+
+
+interface ReverseIterator
+    <dataType>
+    with Predicate
+{
+    dataType& operator--();
+}

@@ -1,0 +1,6 @@
+
+
+interface Collection
+{
+    boolean isEmpty();
+}

@@ -1,0 +1,8 @@
+
+
+interface ForwardIterator
+    <dataType>
+    with Predicate
+{
+    dataType& operator++();
+} 

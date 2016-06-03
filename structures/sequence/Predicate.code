@@ -1,0 +1,7 @@
+
+
+
+interface Predicate
+{
+    boolean test();
+}
