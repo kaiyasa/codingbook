@@ -1,0 +1,24 @@
+apply plugin: 'cpp'
+
+model {
+    components {
+        main(NativeExecutableSpec) {
+            sources {   
+                cpp {
+                    source {
+                        srcDir "src"
+                    }
+                }
+            }   
+        }
+    }
+
+    binaries {
+        all {
+            if (toolChain in VisualCpp) {
+                cppCompiler.args "-IC:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.10240.0\\ucrt"
+                linker.args "/LIBPATH:C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.10240.0\\ucrt\\x86"
+            }
+        }
+    }
+}
