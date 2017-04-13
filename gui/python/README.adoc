@@ -1,0 +1,2 @@
+This is my first success of using GUI programs that
+is accessible both via Windows/ZoomText Fusion and Linux/Orca
