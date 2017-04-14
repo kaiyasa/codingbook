@@ -150,7 +150,7 @@ class Parser {
     
     /// BinopPrecedence - This holds the precedence for each binary operator that is
     /// defined.
-    std::map<char, int> BinopPrecedence;
+    Map<char, int> BinopPrecedence;
     
     /// GetTokPrecedence - Get the precedence of the pending binary operator token.
     int GetTokPrecedence() {
