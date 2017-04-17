@@ -20,10 +20,12 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <iostream.h>
+#include <iostream>
 #include <time.h>
 #include "common.h"
 #include "buffer.h"
+
+using namespace std;
 
 //              ***********************
 //              *                     *
@@ -51,7 +53,7 @@ TTextInBuffer::TTextInBuffer(const char *pInputFileName, TAbortCode ac)
     strcpy(pFileName, pInputFileName);
 
     //--Open the input file.  Abort if failed.
-    file.open(pFileName, ios::in|ios::nocreate);
+    file.open(pFileName, ios::in);
     if (!file.good()) AbortTranslation(ac);
 }
 

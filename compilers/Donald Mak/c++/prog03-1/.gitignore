@@ -1,0 +1,9 @@
+buffer.o
+common.o
+error.o
+misc.o
+parser.o
+scanner.o
+tokeniz1
+tokeniz1.o
+token.o

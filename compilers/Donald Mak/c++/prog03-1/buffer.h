@@ -18,7 +18,7 @@
 #ifndef buffer_h
 #define buffer_h
 
-#include <fstream.h>
+#include <fstream>
 #include <stdio.h>
 #include <string.h>
 #include "misc.h"
@@ -40,6 +40,8 @@ const int maxInputBufferSize = 256;
 //--------------------------------------------------------------
 //  TTextInBuffer       Abstract text input buffer class.
 //--------------------------------------------------------------
+
+using std::fstream;
 
 class TTextInBuffer {
 

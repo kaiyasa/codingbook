@@ -15,10 +15,12 @@
 //  *************************************************************
 
 #include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 #include "error.h"
 
 int errorCount = 0;     // count of syntax errors
+
+using namespace std;
 
 //--------------------------------------------------------------
 //  Abort messages      Keyed to enumeration type TAbortCode.

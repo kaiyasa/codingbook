@@ -14,8 +14,12 @@
 #ifndef misc_h
 #define misc_h
 
+char *strlwr(char *str);
+
+#if 0
 const int false = 0;
 const int true  = 1;
+#endif
 
 //fig 3-4
 //--------------------------------------------------------------
