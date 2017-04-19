@@ -14,8 +14,12 @@
 #ifndef misc_h
 #define misc_h
 
+#if 0
 const int false = 0;
 const int true  = 1;
+#endif
+
+char *strlwr(char *str);
 
 //--------------------------------------------------------------
 //  TCharCode           Character codes.

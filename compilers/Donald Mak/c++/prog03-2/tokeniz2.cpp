@@ -18,16 +18,18 @@
 //  *                                                           *
 //  *************************************************************
 
-#include <iostream.h>
+#include <iostream>
 #include "error.h"
 #include "buffer.h"
 #include "parser.h"
+
+using namespace std;
 
 //--------------------------------------------------------------
 //  main
 //--------------------------------------------------------------
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     //--Check the command line arguments.
     if (argc != 2) {

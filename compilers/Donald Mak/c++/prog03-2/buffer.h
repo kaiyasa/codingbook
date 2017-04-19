@@ -18,7 +18,7 @@
 #ifndef buffer_h
 #define buffer_h
 
-#include <fstream.h>
+#include <fstream>
 #include <stdio.h>
 #include <string.h>
 #include "misc.h"
@@ -44,7 +44,7 @@ const int maxInputBufferSize = 256;
 class TTextInBuffer {
 
 protected:
-    fstream  file;                      // input text file
+    std::fstream  file;                      // input text file
     char    *const pFileName;           // ptr to the file name
     char     text[maxInputBufferSize];  // input text buffer
     char    *pChar;                     // ptr to the current char

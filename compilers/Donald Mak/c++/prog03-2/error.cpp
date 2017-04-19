@@ -17,9 +17,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include <iostream.h>
+#include <iostream>
 #include "buffer.h"
 #include "error.h"
+
+using namespace std;
 
 int errorCount       = 0;     // count of syntax errors
 int errorArrowFlag   = true;  // true if print arrows under syntax
